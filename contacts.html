@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#index.html"><img src="./images/logo.png" alt="Logo"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="films.html">Films</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+
+    <main>
+        <section class="location">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A211f77171078b1ad9cde29f9b9aa7522bc83ab08a467e5c09fe787a58b91877a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span>
+                            <h5>XYZ Road, ABC Building</h5>
+                            <p>Sillicon Valley, USA</p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+123456789</h5>
+                            <p>Mon to Sun, 9AM to 9PM</p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>info@gmail.com</h5>
+                            <p>24/7</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contact-col">
+                    <form>
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="sumbit" class="btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>About us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, blanditiis tempora quidem inventore beatae facere</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <!--Java Script-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px'
+        }
+    </script>
+</body>
+</html>

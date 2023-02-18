@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#index.html"><img src="./images/logo.png" alt="Logo"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="films.html">Films</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>FILMS</h1>
+    </section>
+
+    <main>
+        <section class="block2">
+            <h1>SPIDER-MAN</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit quisquam nihil soluta possimus eveniet facere vitae libero incidunt. Temporibus pariatur voluptatem nulla itaque dolor necessitatibus, exercitationem vero est omnis.</p>
+
+            <div class="row">
+                <div class="block2-col">
+                    <h3>Lorem ispum</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima placeat necessitatibus velit libero deserunt voluptatem esse, ratione dolores veritatis debitis consectetur maxime hic iure nam pariatur ullam. Sit, accusamus.</p>
+                </div>
+
+                <div class="block2-col">
+                    <h3>Lorem ispum</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima placeat necessitatibus velit libero deserunt voluptatem esse, ratione dolores veritatis debitis consectetur maxime hic iure nam pariatur ullam. Sit, accusamus.</p>
+                </div>
+
+                <div class="block2-col">
+                    <h3>Lorem ispum</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore minima placeat necessitatibus velit libero deserunt voluptatem esse, ratione dolores veritatis debitis consectetur maxime hic iure nam pariatur ullam. Sit, accusamus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block4">
+            <h1>The Avengers</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla reprehenderit hic quia eveniet perspiciatis. Quam nulla corrupti cum excepturi perferendis! Commodi ratione voluptates nemo magni voluptas qui! Natus, corrupti.</p>
+
+            <div class="row">
+                <div class="block4-col">
+                    <img src="./images/av1.webp" alt="">
+                    <h3>Lorem Lorem</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel commodi repellendus sequi aspernatur nemo numquam? Officiis.</p>
+                </div>
+
+                <div class="block4-col">
+                    <img src="./images/av2.jpeg" alt="">
+                    <h3>Lorem Lorem</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel commodi repellendus sequi aspernatur nemo numquam? Officiis.</p>
+                </div>
+
+                <div class="block4-col">
+                    <img src="./images/av3.avif" alt="">
+                    <h3>Lorem Lorem</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel commodi repellendus sequi aspernatur nemo numquam? Officiis.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>About us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis explicabo, blanditiis tempora quidem inventore beatae facere</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <!--Java Script-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px'
+        }
+    </script>
+</body>
+</html>
